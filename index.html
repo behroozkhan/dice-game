@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BK Dice Simulator - Roll the dice and try your luck! Play for fun or to improve your odds.">
+    <meta name="keywords" content="dice simulator, BK dice, roll dice, online dice, dice game, dice roll">
+    <meta name="author" content="behrooz khan">
+    <title> Bk Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- top img dice  -->
+    <link rel="icon" href="/img/dice-6.png" type="image/png">
+
+</head>
+<body>
+
+    <!-- Main Heading -->
+
+    <div class="main-heading">
+        <h1>BK Dice Simulator</h1>
+    </div>
+
+    <!-- Sub-Headings -->
+
+    <div class="sub-head">
+        <h3 id="score">Player Score:</h3>
+        <h3 id="attempts">Player Attempts:</h3>
+    </div>
+
+
+    <!-- Dice Container -->
+    <div class="container">
+
+        <img src="./img/dice-1.png" alt="main-img">
+
+    </div>
+    <!-- Dice Buttons -->
+
+    <div class="btn">
+        <button class="button-bk" onclick="diceSamulator('one')">One</button>
+        <button class="button-bk" onclick="diceSamulator('two')">Two</button>
+        <button class="button-bk" onclick="diceSamulator('three')">Three</button>
+        <button class="button-bk" onclick="diceSamulator('four')">Four</button>
+        <button class="button-bk" onclick="diceSamulator('five')">Five</button>
+        <button class="button-bk" onclick="diceSamulator('six')">Six</button>
+
+        <button class="btn resetbtn" onclick="resetButton()">Reset</button>
+    </div>
+
+    <!-- Result Percentage -->
+    <h2 id="percentage"></h2>
+    <!-- dice Markup Hands Here  -->
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- JavaScript Link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
